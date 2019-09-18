@@ -8,8 +8,9 @@ The objective of this application was to create a rails API with backend tests.
 2. `cd /marvel-api`
 3. `bundle install`
 4. `rails s`
-5. `rake db:create` `rake db:migrate` to create and migrate your local database.
-6. `rake db:seed` to create the characters.
+5. `rake db:create`
+6. `rake db:migrate`
+7. `rake db:seed`
 
 **To run api Tests:**
 `cucumber -p localhost -t @characters`
