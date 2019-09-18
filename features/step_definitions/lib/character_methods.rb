@@ -1,7 +1,6 @@
 def characters
 	res = RestClient.get("#{BASE_HOST}/characters", nil)
 	parsed_res = JSON.parse(res, symbolize_names: true)
-	puts parsed_res[:data].to_yaml
 	expect(res.code).to eql(200)
 	expect(parsed_res[:status]).to eql('SUCCESS')
 	expect(parsed_res[:message]).to eql('Loaded characters')

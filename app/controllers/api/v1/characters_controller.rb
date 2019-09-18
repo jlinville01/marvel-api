@@ -2,7 +2,7 @@ module Api
 	module V1
 		class CharactersController < ApplicationController
 			def index
-				characters = Character.order('created_at DESC')
+				characters = Character.all
 				render json: { status: 'SUCCESS', message: 'Loaded characters', data: characters}, status: :ok
 			end
 
