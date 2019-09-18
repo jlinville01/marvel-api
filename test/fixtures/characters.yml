@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alias: MyString
+  real_name: MyString
+  debut: MyString
+  status: MyString
+  powers: MyString
+  bio: MyString
+
+two:
+  alias: MyString
+  real_name: MyString
+  debut: MyString
+  status: MyString
+  powers: MyString
+  bio: MyString

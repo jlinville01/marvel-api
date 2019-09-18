@@ -1,0 +1,5 @@
+# config/cucumber.yml
+##YAML Template
+# Profiles for controlling base host, etc for API tests
+---
+localhost: BASE_HOST='http://localhost:3000/api/v1'
