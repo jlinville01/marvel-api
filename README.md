@@ -5,7 +5,7 @@ The objective of this application was to create a rails API with backend tests.
 # Setting up Locally
 
 1. Clone the repo.
-2. `cd /marvelapi`.
+2. `cd /marvel-api`.
 3. Run `bundle`.
 4. Start postgresql.
 5. Run `rake db:create` `rake db:migrate` to create and migrate your local database.
