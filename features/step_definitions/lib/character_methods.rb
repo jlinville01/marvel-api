@@ -6,7 +6,7 @@ def characters
 	expect(parsed_res[:message]).to eql('Loaded characters')
 	parsed_res[:data]
 rescue RuntimeError => e
-	puts e.response
+	raise(e.response)
 end
 
 def specific_character(id)
@@ -18,7 +18,7 @@ def specific_character(id)
 	expect(parsed_res[:data][:id]).to eql(id)
 	parsed_res[:data]
 rescue RuntimeError => e
-	puts e.response
+	raise(e.response)
 end
 
 def create_character(char_alias, real_name, debut, status, powers, bio)
@@ -37,7 +37,7 @@ def create_character(char_alias, real_name, debut, status, powers, bio)
 	expect(parsed_res[:message]).to eql('Saved character')
 	expect(parsed_res[:data][:alias]).to eql(char_alias)
 rescue RuntimeError => e
-	puts e.response
+	raise(e.response)
 end
 
 def update_character(id)
@@ -52,7 +52,7 @@ def update_character(id)
 	expect(parsed_res[:message]).to eql('Updated character')
 	expect(parsed_res[:data][:debut]).to eql(new_debut)
 rescue RuntimeError => e
-	puts e.response
+	raise(e.response)
 end
 
 def delete_character(id)
@@ -62,5 +62,5 @@ def delete_character(id)
 	expect(parsed_res[:status]).to eql('SUCCESS')
 	expect(parsed_res[:message]).to eql('Deleted character')
 rescue RuntimeError => e
-	puts e.response
+	raise(e.response)
 end
