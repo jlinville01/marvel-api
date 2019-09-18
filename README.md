@@ -1,6 +1,6 @@
 # Marvel API
 
-The objective of this application was to create a rails API with backend tests.
+The objective of this application was to create a rails API including backend tests.
 
 # Setting up Locally
 
