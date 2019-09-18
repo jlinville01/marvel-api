@@ -1,24 +1,21 @@
-# README
+# Marvel API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The objective of this application was to create a rails API with backend tests.
 
-Things you may want to cover:
+# Setting up Locally
 
-* Ruby version
+1. Clone the repo.
+2. `cd /resume`.
+3. Run `bundle`.
+4. Start postgresql.
+5. Run `rake db:create` `rake db:migrate` to create and migrate your local database.
+6. Run `rake db:seed` to create the jobs and degrees.
+7. Navigate to `localhost:3000` to visit and view site.
 
-* System dependencies
+**To run Unit Tests:**
+rake spec OR rspec
 
-* Configuration
+**To run Integration Tests:**
+rspec --tag integration spec/
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Alt Text](https://media1.tenor.com/images/ea7341c2a9e1faf6c1ffff361e683cdc/tenor.gif?itemid=4947851)
