@@ -7,7 +7,7 @@ The objective of this application was to create a rails API with backend tests.
 1. Clone the repo.
 2. `cd /marvel-api`.
 3. Run `bundle install`.
-4. rails s.
+4. `rails s`.
 5. Run `rake db:create` `rake db:migrate` to create and migrate your local database.
 6. Run `rake db:seed` to create the characters.
 7. Navigate to `localhost:3000` to visit and view site.
