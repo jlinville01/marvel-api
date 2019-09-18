@@ -33,14 +33,13 @@ Then(/^the character should be updated$/) do
 end
 
 Given(/^I send a valid request to delete character$/) do
-	delete_character(3)
+	delete_character(4)
 end
 
 Then(/^the character should be deleted$/) do
 	begin
-		specific_character(3)
-	rescue e
-		puts e.response.code
-		# expect(e.response.code).to eql()
+		RestClient.get("#{BASE_HOST}/characters/3", nil)
+	rescue => e
+		expect(e.response.code).to eql(404)
 	end
 end
