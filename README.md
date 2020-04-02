@@ -12,7 +12,8 @@ The objective of this application was to create a rails API including backend te
 6. `rake db:migrate`
 7. `rake db:seed`
 
-**Run API Tests:**
+# Run API Tests
+
 `cucumber -p localhost -t @characters`
 
 (run `rake db:drop db:create db:migrate db:seed` to reset database)
