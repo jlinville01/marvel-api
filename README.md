@@ -2,7 +2,7 @@
 
 The objective of this application was to create a rails API including backend tests.
 
-# Setting up Locally
+# Setup
 
 1. Clone the repo.
 2. `cd /marvel-api`
@@ -12,7 +12,7 @@ The objective of this application was to create a rails API including backend te
 6. `rake db:migrate`
 7. `rake db:seed`
 
-**To run api Tests:**
+**Run api Tests:**
 `cucumber -p localhost -t @characters`
 
 (run `rake db:drop db:create db:migrate db:seed` to reset database)
