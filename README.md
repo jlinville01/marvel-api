@@ -2,9 +2,6 @@
 
 ## Setup
 
-5. `rake db:create`
-6. `rake db:migrate`
-7. `rake db:seed`
 1. **Clone the repository**
    ```bash
    git clone https://github.com/jlinville01/marvel-api.git
