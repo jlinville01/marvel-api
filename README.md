@@ -1,5 +1,7 @@
 # Marvel API
 
+![Alt Text](https://media1.tenor.com/images/ea7341c2a9e1faf6c1ffff361e683cdc/tenor.gif?itemid=4947851)
+
 ## Setup
 
 1. **Clone the repository**
@@ -36,5 +38,3 @@
    ```
 
 (run `rake db:drop db:create db:migrate db:seed` to reset database)
-
-![Alt Text](https://media1.tenor.com/images/ea7341c2a9e1faf6c1ffff361e683cdc/tenor.gif?itemid=4947851)
