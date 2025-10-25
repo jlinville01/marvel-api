@@ -1,20 +1,42 @@
 # Marvel API
 
-The objective of this application was to create a rails API including backend tests.
+## Setup
 
-# Setup
-
-1. Clone the repo.
-2. `cd /marvel-api`
-3. `bundle install`
-4. `rails s`
 5. `rake db:create`
 6. `rake db:migrate`
 7. `rake db:seed`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/jlinville01/marvel-api.git
+   cd marvel-api
+   ```
 
-# Run API Tests
+2. **Install dependencies**
+   ```bash
+   bundle install
+   ```
 
-`cucumber -p localhost -t @characters`
+3. **Start the development server**
+   ```bash
+   rails s
+   ```
+   
+4. **Change directories**
+   ```bash
+   cd qa
+   ```
+   
+5. **Setup the DB**
+   ```bash
+   rake db:create
+   rake db:migrate
+   rake db:seed
+   ```
+   
+6. Run API Tests
+   ```bash
+   cucumber -p localhost -t @characters
+   ```
 
 (run `rake db:drop db:create db:migrate db:seed` to reset database)
 
